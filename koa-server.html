@@ -1,0 +1,40 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<dom-module id="koa-server">
+  <template>
+    <content></content>
+  </template>
+  <script>
+    (function (Polymer, koa, fs, _) {
+      'use strict';
+      const app = koa();
+      class KoaServer {
+        beforeRegister() {
+          this.is = 'koa-server';
+
+          this.properties = {
+            /* The Koa Application */
+            app: {
+              type: Object
+            },
+
+            /** The port that the applicaiton will run on. */
+            port: {
+              type: Number,
+              value: 3000,
+              reflectToAttribute: true,
+              notify: true
+            }
+          };
+        }
+
+        attached() {
+          this.app = app;
+          this.app.listen(this.port);
+          console.log(`koa application running on port: ${this.port}`);
+        }
+      }
+
+      Polymer(KoaServer);
+    })(Polymer, require('koa'));
+  </script>
+</dom-module>
