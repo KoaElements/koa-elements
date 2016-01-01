@@ -1,56 +1,29 @@
-# koa-server
+# koa-server-demo
 
-An element providing a starting point for your own reusable Polymer elements.
-
-
-## Dependencies
-
-Element dependencies are managed via [Bower](http://bower.io/). You can
-install that via:
-
-    npm install -g bower
-
-Then, go ahead and download the element's dependencies:
-
-    bower install
+> My slick app
 
 
-## Playing With Your Element
+## Dev
 
-If you wish to work on your element in isolation, we recommend that you use
-[Polyserve](https://github.com/PolymerLabs/polyserve) to keep your element's
-bower dependencies in line. You can install it via:
+```
+$ npm install
+```
 
-    npm install -g polyserve
+### Run
 
-And you can run it via:
+```
+$ npm start
+```
 
-    polyserve
+### Build
 
-Once running, you can preview your element at
-`http://localhost:8080/components/koa-server/`, where `koa-server` is the name of the directory containing it.
+```
+$ npm run build
+```
+
+Builds the app for OS X, Linux, and Windows, using [electron-packager](https://github.com/maxogden/electron-packager).
 
 
-## Testing Your Element
+## License
 
-Simply navigate to the `/test` directory of your element to run its tests. If
-you are using Polyserve: `http://localhost:8080/components/koa-server/test/`
-
-### web-component-tester
-
-The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester).
-Install it via:
-
-    npm install -g web-component-tester
-
-Then, you can run your tests on _all_ of your local browsers via:
-
-    wct
-
-#### WCT Tips
-
-`wct -l chrome` will only run tests in chrome.
-
-`wct -p` will keep the browsers alive after test runs (refresh to re-run).
-
-`wct test/some-file.html` will test only the files you specify.
+MIT © [Brett](http://github.com/blamy)

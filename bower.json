@@ -1,27 +1,26 @@
 {
-  "name": "koa-server",
-  "version": "1.0.1",
+  "name": "koa-server-demo",
+  "description": "My slick app",
+  "main": "index.js",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "[object Object]"
   ],
-  "description": "An element providing a solution to no problem in particular.",
+  "license": "MIT",
   "keywords": [
-    "web-component",
-    "polymer",
-    "seed"
+    "electron-app",
+    "electron"
   ],
-  "main": "koa-server.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/KoaElements/koa-elements",
+  "moduleType": [],
   "ignore": [
-    "/.*",
-    "/test/"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.0.0"
-  },
-  "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "*"
+    "koa-server": "KoaElements/koa-server",
+    "koa-route": "KoaElements/koa-route"
   }
 }
